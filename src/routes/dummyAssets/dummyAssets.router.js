@@ -7,5 +7,6 @@ dummyAssetsRouter.get('/:id', dummyAssetsController.getDummyAssetById);
 dummyAssetsRouter.post('/', dummyAssetsController.createDummyAsset);
 dummyAssetsRouter.put('/:id', dummyAssetsController.updateDummyAsset);
 dummyAssetsRouter.delete('/:id', dummyAssetsController.deleteDummyAsset);
+dummyAssetsRouter.get('/category/:category', dummyAssetsController.getDummyAssetsByCategory);
 
 module.exports = dummyAssetsRouter;

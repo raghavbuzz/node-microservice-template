@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use('/v1', api);
 app.get('/', (req, res) => {
-    res.send('Hello, TypeScript with Node.js and Express!');
+    res.send('Server is running with Node.js and Express!');
 })
 
 
