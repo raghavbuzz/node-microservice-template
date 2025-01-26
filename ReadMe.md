@@ -5,4 +5,5 @@ DB_NAME=
 DB_USER=
 DB_PASSWORD=
 NODE_ENV=development
+LOG_LEVEL=debug
 ## End of Environment Variables ##

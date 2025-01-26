@@ -24,6 +24,7 @@ async function startServer() {
     
     server.listen(PORT, () => {
         console.log(`Server is running at https://localhost:${PORT}`);
+        console.log(`Swagger documentation available at https://localhost:${PORT}/api-docs`);
     });
 }
 

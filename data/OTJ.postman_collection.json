@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "01dbea53-b065-4f7e-baf2-6f084f8baf9e",
+		"name": "OTJ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2988923"
+	},
+	"item": [
+		{
+			"name": "1. Basic Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8000",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Dummy Asset - Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8000/v1/dummyAssets/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"dummyAssets",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Dummy Asset - Get By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8000/v1/dummyAssets/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"dummyAssets",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Dummy Asset - Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Conference Table\",\r\n  \"category\": \"Furniture\",\r\n  \"price\": 90000,\r\n  \"purchase_date\": \"2023-12-15\",\r\n  \"status\": \"Active\",\r\n  \"description\": \"Large table for team meetings\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8000/v1/dummyAssets/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"dummyAssets",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Dummy Asset - Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"price\": 90000,\r\n  \"status\": \"Active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8000/v1/dummyAssets/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"dummyAssets",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Dummy Asset - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8000/v1/dummyAssets/9",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"dummyAssets",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Dummy Asset - Get By Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8000/v1/dummyAssets/category/Electronics",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"dummyAssets",
+						"category",
+						"Electronics"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
